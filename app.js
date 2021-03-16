@@ -44,20 +44,24 @@ app.get("/", (req, res) => {
     res.render("home");
 });
 
-app.get("/emergencyContacts", (req, res) => {
-    res.render("emergencyContacts");
-});
-
-app.get("/buildingDetails", (req, res) => {
+app.get("/buildingdetails", (req, res) => {
     res.render("buildingDetails");
 });
 
-app.get("/history", (req, res) => {
-    res.render("history");
+app.get("/occupancy", (req, res) => {
+    res.render("occupancy");
 });
 
 app.get("/login", (req, res) => {
     res.render("login");
+});
+
+app.get("/contacts", (req, res) => {
+    res.render("contacts");
+});
+
+app.get("/emergency", (req, res) => {
+    res.render("emergencyDetails");
 });
 
 
