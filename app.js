@@ -52,16 +52,16 @@ app.get("/occupancy", (req, res) => {
     res.render("occupancy");
 });
 
-app.get("/login", (req, res) => {
-    res.render("login");
+app.get("/emergency", (req, res) => {
+    res.render("emergencyDetails");
 });
 
 app.get("/contacts", (req, res) => {
     res.render("contacts");
 });
 
-app.get("/emergency", (req, res) => {
-    res.render("emergencyDetails");
+app.get("/login", (req, res) => {
+    res.render("login");
 });
 
 
