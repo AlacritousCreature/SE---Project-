@@ -60,9 +60,16 @@ app.get("/contacts", (req, res) => {
     res.render("contacts");
 });
 
+app.get("/register", (req, res) => {
+    res.render("register");
+});
+
 app.get("/login", (req, res) => {
     res.render("login");
 });
+
+//user model
+
 
 
 let port = process.env.PORT || 3000

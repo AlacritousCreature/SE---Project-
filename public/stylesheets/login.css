@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background-image: linear-gradient(to top, #cd9cf2 0%, #d6a8fa 100%);
 }
 
 .box {
