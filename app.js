@@ -65,6 +65,10 @@ app.get("/login", (req, res) => {
 });
 
 
+app.get("/graph", (req, res) => {
+    res.render("graph");
+})
+
 let port = process.env.PORT || 3000
 app.listen(port, process.env.IP, () => {
     console.log("showing on port 3000.");
