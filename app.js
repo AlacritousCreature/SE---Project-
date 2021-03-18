@@ -68,9 +68,16 @@ app.get("/login", (req, res) => {
     res.render("login");
 });
 
-//user model
+app.post("/login", passport.authenticate("local", {
+    successRedirect: "/",
+    failureRedirect: "/login",
+}), function(req, res) {
 
+});
 
+app.get("/graph", (req, res) => {
+    res.render("graph");
+})
 
 let port = process.env.PORT || 3000
 app.listen(port, process.env.IP, () => {
